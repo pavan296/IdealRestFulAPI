@@ -41,7 +41,7 @@ namespace PracticeAPI.Controllers
           
         }
         [HttpGet]
-        //[Authorize(Roles ="Reader")]
+        [Authorize(Roles ="Reader")]
         //[MapToApiVersion("1.0")]
         public async  Task<IActionResult> GetAllV1()
         {
